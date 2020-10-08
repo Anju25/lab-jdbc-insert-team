@@ -1,17 +1,16 @@
 package model;
-public class Team
-{
+
+public class Display {
 	private String name;
 	private String coach;
-	City city=new City();
+	private String cityname;
 	
-	public Team(String name, String coach, City city) {
+	public Display(String name, String coach, String cityname) {
 		super();
 		this.name = name;
 		this.coach = coach;
-		this.city = city;
+		this.cityname = cityname;
 	}
-	
 	public String getName() {
 		return name;
 	}
@@ -24,11 +23,12 @@ public class Team
 	public void setCoach(String coach) {
 		this.coach = coach;
 	}
-	public City getCity() {
-		return city;
+	public String getCityname() {
+		return cityname;
 	}
-	public void setCity(City city) {
-		this.city = city;
+	public void setCityname(String cityname) {
+		this.cityname = cityname;
 	}
 	
+
 }
